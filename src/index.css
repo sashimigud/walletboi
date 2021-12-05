@@ -1,13 +1,33 @@
-body {
+@font-face {
+  font-family: 'Lazer84';
+  src: local('Lazer84'), url(./fonts/Lazer84.ttf) format('truetype');
+}
+
+@font-face {
+  font-family: 'Sabo-Filled';
+  src: local('Sabo-Filled'), url(./fonts/Sabo-Filled.otf) format('opentype');
+}
+
+@font-face {
+  font-family: 'Sabo-Regular';
+  src: local('Sabo-Regular'), url(./fonts/Sabo-Regular.otf) format('opentype');
+}
+
+@font-face {
+  font-family: 'Streamster';
+  src: local('Streamster'), url(./fonts/Streamster.ttf) format('truetype');
+}
+
+html,
+body,
+#root {
   margin: 0;
   font-family: -apple-system, BlinkMacSystemFont, 'Segoe UI', 'Roboto', 'Oxygen',
     'Ubuntu', 'Cantarell', 'Fira Sans', 'Droid Sans', 'Helvetica Neue',
     sans-serif;
   -webkit-font-smoothing: antialiased;
   -moz-osx-font-smoothing: grayscale;
-}
-
-code {
-  font-family: source-code-pro, Menlo, Monaco, Consolas, 'Courier New',
-    monospace;
+  width: 100%;
+  height: calc(100vh);
+  box-sizing: border-box;
 }

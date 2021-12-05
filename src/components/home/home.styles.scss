@@ -1,0 +1,65 @@
+.home-container {
+  background-color: #c0c0c0;
+  max-width: 500px;
+  min-height: 450px;
+  margin: auto;
+  display: flex;
+  flex-direction: column;
+  align-items: center;
+  justify-content: space-between;
+  padding: 40px;
+  box-sizing: border-box;
+
+  box-shadow: -1px 1px 7px -1px rgba(0, 0, 0, 0.75);
+  -webkit-box-shadow: -1px 1px 7px -1px rgba(0, 0, 0, 0.75);
+  -moz-box-shadow: -1px 1px 7px -1px rgba(0, 0, 0, 0.75);
+
+  .logo-container {
+    margin-top: 100px;
+
+    h1 {
+      margin: 0;
+      font-size: 50px;
+
+      &:nth-child(1) {
+        font-family: 'Lazer84';
+        color: yellow;
+        transform: rotate(-10deg);
+        z-index: -1;
+      }
+
+      &:nth-child(2) {
+        font-family: 'Streamster';
+        margin-top: -20px;
+        font-size: 35px;
+        color: red;
+        z-index: 5;
+        position: relative;
+      }
+    }
+  }
+
+  .current-account {
+    font-family: 'Sabo-Filled';
+    display: flex;
+    flex-direction: column;
+    color: #ff00ff;
+    text-shadow: 2px 2px yellow;
+
+    span {
+      color: black;
+      margin-top: 10px;
+      font-size: 15px;
+    }
+  }
+
+  .connect-wallet-btn {
+    font-family: 'Sabo-Filled';
+    width: max-content;
+    cursor: pointer;
+
+    &:hover {
+      color: #ff00ff;
+    }
+  }
+}
